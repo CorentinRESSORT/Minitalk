@@ -41,7 +41,7 @@ void send_char(int pid, unsigned char byte)
 {
     __uint8_t count;
 
-    count = 1 << 7;
+    count = 1 << 6;
     while (count)
     {
         if (byte & count)
@@ -76,6 +76,6 @@ int main(int argc, char **argv)
         argv[2]++;
     }
     send_char(ft_atoi(argv[1]), 0);
-    printf("%d", 64 >> 1);
+    printf("%d", 1 << 6);
     return (0);
 }

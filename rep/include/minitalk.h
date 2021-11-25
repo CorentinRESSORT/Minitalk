@@ -17,13 +17,21 @@
 
 typedef     struct s_stack 
 {
-        char    *message;
+        char    message[BUFFSIZE];
         int     bit;
         int     byte;
         _Bool    receive;
         _Bool    overflow;
 }          t_stack;
 
-t_stack p_print = {{0}, 1 << 6, 0, FALSE, FALSE};
+
+
+void	zerobit(int sig, siginfo_t *info, void *context);
+void	onebit(int sig, siginfo_t *info, void *context);
+void my_handler(int signum);
+size_t	ft_strlen(const char *s);
+void	ft_bzero(void *s, size_t n);
+char	*ft_itoa(int n);
+void	*ft_memset(void *s, int c, size_t n);
 
 #endif
