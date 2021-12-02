@@ -67,7 +67,7 @@ int main(int argc, char **argv)
 {
     if (argc != 3)
     {
-        printf(" Syntaxe client ./client [PID] [String]");
+		write(1,"Syntaxe client ./client [PID] [String]\n",40 );
         return (1);
     }
     while (*argv[2])
