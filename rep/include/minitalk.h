@@ -5,7 +5,7 @@
 
 #ifndef MINITALK_H
 # define MINITALK_H
-# define BUFFSIZE 1024
+# define BUFFSIZE 2048
 
 # ifndef TRUE
 #   define TRUE 1

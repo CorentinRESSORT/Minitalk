@@ -26,8 +26,7 @@ void	zerobit(int sig, siginfo_t *info, void *context)
 {
 	(void) sig;
 	(void) context;
-	(void) info;
-	
+
 	if (!p_print.bit)
 	{
 		p_print.bit = 1 << 6;
